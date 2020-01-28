@@ -2,27 +2,47 @@
 using namespace std;
 
 int main(){
+
+	char grade;
+	int i=0;
 	int count[5] = {}; //Declare array count for counting A,B,C,D,F and initialize all element = 0
-	cout << "Please input grade of each student (A-F) or input 0 to exit.";
+	cout << "Please input grade of each student (A-F) or input 0 to exit."<<endl;
 	do{
-		cout << "Student [" << "]:";
+		cout << "Student [" << i+1 << "]:";
 		cin >> grade; //The loop must be terminated when grade = '0'
-		if(true) // if grade is A
-			//Do something
-		}else if(true) // if grade is B
-			//Do something
-		//and so on ... for grade = C, D, F	
+		if(grade == 'A') {
+			count[0]+=1;
+
+		}else if(grade == 'B'){
+			count[1]+=1;
+
+		}else if (grade == 'C'){
+			count[2]+=1;
+
+		}else if (grade == 'D'){
+			count[3]+=1;
+
+		}else if (grade == 'F'){
+			count[4]+=1;
+
+		}else if (grade == '0'){
+			break;
+
 		}else{ // grade is wrong input
-			//Do something
-		} 
-	}while(true);
+			cout<<"Wrong input. Please input again."<<endl;
+		}
+
+		i++;
+	}while(grade != 0);
 	
-	
-	cout << "In total ? students.";
-	cout << "A = " << count[0] <<",";
-	cout << "B = " << count[1] <<",";	
-	//	and so on ... for grade = C, D, F	
-	
-	}
+	 
+	cout << "In total "<< i <<" students."<<endl;
+	cout << "A = " << count[0] <<", ";
+	cout << "B = " << count[1] <<", ";
+	cout << "C = " << count[1] <<", ";
+	cout << "D = " << count[1] <<", ";
+	cout << "F = " << count[1];
+
 	return 0;
 }
+	
