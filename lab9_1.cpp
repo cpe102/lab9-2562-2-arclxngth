@@ -30,6 +30,7 @@ int main(){
 
 		}else{ // grade is wrong input
 			cout<<"Wrong input. Please input again."<<endl;
+			i--;
 		}
 
 		i++;
@@ -39,9 +40,9 @@ int main(){
 	cout << "In total "<< i <<" students."<<endl;
 	cout << "A = " << count[0] <<", ";
 	cout << "B = " << count[1] <<", ";
-	cout << "C = " << count[1] <<", ";
-	cout << "D = " << count[1] <<", ";
-	cout << "F = " << count[1];
+	cout << "C = " << count[2] <<", ";
+	cout << "D = " << count[3] <<", ";
+	cout << "F = " << count[4];
 
 	return 0;
 }
